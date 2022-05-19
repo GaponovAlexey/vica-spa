@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 export const HeaderImg = () => {
   return (
     <div
-      className='sm:hidden'
+      className=''
       // className={css`
       //   @media (max-width: 768px) {
       //     width: 350px;
@@ -15,26 +16,19 @@ export const HeaderImg = () => {
       //   }
       // `}
     >
-      <img
-        width='960px'
-        height='400px'
+      <Image
+        width='1333'
+        height='444'
+        quality='100'
         src='/img/2.jpg'
         alt='logo'
+        className='object-cover object-[-360px] border-radius-[5px] pt-5'
         // className={css`
         //   object-fit: cover;
         //   object-position: 0px -360px;
         //   border-radius: 5px;
         //   padding-top: 20px;
-        //   @media (max-width: 768px) {
-        //     max-width: 710px;
-        //     object-position: 0px -260px;
-        //   }
-        //   @media (max-width: 420px) {
-        //     max-width: 350px;
-        //     object-position: 0px -90px;
-        //     height: 200px;
-        //   }
-        // `}
+        //
       />
     </div>
   )
