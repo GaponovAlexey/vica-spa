@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 
 export const Header = () => {
-  const [Isactive, setIsactive] = useState(true)
   const [LanguageENG, setLanguageENG] = useState(true)
 
   return (
     <header id='home'>
       <div className='flex flex-wrap justify-between items-center px-4 py-2'>
-        {!Isactive && <div>&#10060;</div>}
         <li>
           <a href='#home' onClick={() => setIsactive(!Isactive)}>
             {LanguageENG ? 'Home' : 'Главная'}
