@@ -7,13 +7,11 @@ body {
 }
 
 a,
-li {
+li,
+* {
   color: inherit;
   text-decoration: none;
   list-style: none;
-}
-
-* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
