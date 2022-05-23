@@ -3,7 +3,8 @@ import Head from 'next/head'
 import s from '../../styles/css/Home.module.css'
 import { Header } from '../components/layout/homePage/Header'
 import { HeaderImg } from '../components/layout/homePage/HeaderImg'
-import { HomepageTop } from '../components/layout/homePage/HomepageTop'
+
+
 const Home: NextPage = () => {
   return (
     <div className={s.container}>
@@ -20,11 +21,8 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <HeaderImg />
-      {/* <HomepageTop /> */}
       <main className={s.main}>
-        <div className='text-3xl font-bold '>start
-        
-        </div>
+        <div className='text-3xl font-bold '>start</div>
       </main>
 
       <footer className={s.footer}>footer</footer>
