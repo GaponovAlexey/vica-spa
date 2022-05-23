@@ -17,12 +17,9 @@ export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
         <link rel='icon' href='#!' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Macondo&display=swap'
-          rel='stylesheet'
-        />
+        <link href='https://fonts.googleapis.com/css2?family=Macondo&display=swap' />
       </Head>
-      <div className='max-w-[1200px] m-auto' >
+      <div className='max-w-[1200px] m-auto'>
         <Header />
         <HeaderImg />
       </div>
