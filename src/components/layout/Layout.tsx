@@ -9,6 +9,8 @@ interface LayoutProps {
 }
 
 const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
+  
+  
   return (
     <div>
       <Head>
