@@ -22,7 +22,10 @@ export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
           rel='stylesheet'
         />
       </Head>
-      <Header />
+      <div className='max-w-[1200px] m-auto' >
+        <Header />
+        <HeaderImg />
+      </div>
       {children}
       <footer className={s.footer}>footer</footer>
     </>

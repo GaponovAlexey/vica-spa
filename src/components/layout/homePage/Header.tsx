@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
-import { HeaderImg } from './HeaderImg'
 
 export const Header = () => {
-  const [LanguageENG, setLanguageENG] = useState(true)
+  const [LanguageENG, setLanguageENG] = useState(false)
 
   return (
-    <header id='home'>
-      <div className='flex flex-wrap justify-between items-center px-4 py-2 cursor-pointer '>
+    <header
+      id='home'
+      className='fixed h-1/1 w-full max-w-[1200px]  items-center left-auto top-auto z-10 '
+    >
+      <div
+        className='
+        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-4   bg-white '
+      >
         <li>
           <a href='#home' onClick={() => setLanguageENG(!LanguageENG)}>
             {LanguageENG ? 'Home' : 'Главная'}
@@ -43,7 +48,7 @@ export const Header = () => {
           </a>
         </li>
       </div>
-      <HeaderImg />
+
       {/* <div className='fixed top-[15px]'>
         <svg viewBox='0 0 100 80' width='40' height='40'>
           <rect width='100' height='20' rx='8' />

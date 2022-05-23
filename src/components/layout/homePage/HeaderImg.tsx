@@ -4,12 +4,12 @@ import React from 'react'
 export const HeaderImg = () => {
   return (
     <Image
-      width={1080}
-      height={555}
+      width={600}
+      height={355}
       src={`/img/2.jpg`}
       alt='logo'
-      className='object-cover  border-radius-[5px] pt-5'
-      priority
+      className='object-cover '
+      // priority
     />
   )
 }
