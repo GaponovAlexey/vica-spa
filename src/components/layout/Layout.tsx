@@ -23,7 +23,6 @@ export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
         />
       </Head>
       <Header />
-      <HeaderImg />
       {children}
       <footer className={s.footer}>footer</footer>
     </>

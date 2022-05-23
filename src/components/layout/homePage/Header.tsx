@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { HeaderImg } from './HeaderImg'
 
 export const Header = () => {
   const [LanguageENG, setLanguageENG] = useState(true)
@@ -42,6 +43,7 @@ export const Header = () => {
           </a>
         </li>
       </div>
+      <HeaderImg />
       {/* <div className='fixed top-[15px]'>
         <svg viewBox='0 0 100 80' width='40' height='40'>
           <rect width='100' height='20' rx='8' />
