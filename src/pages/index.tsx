@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import s from '../../styles/css/Home.module.css'
-import { Header } from '../components/homePage/Header'
-import { HeaderImg } from '../components/homePage/HeaderImg'
-import { HomepageTop } from '../components/homePage/HomepageTop'
+import { Header } from '../components/layout/homePage/Header'
+import { HeaderImg } from '../components/layout/homePage/HeaderImg'
+import { HomepageTop } from '../components/layout/homePage/HomepageTop'
 const Home: NextPage = () => {
   return (
     <div className={s.container}>
