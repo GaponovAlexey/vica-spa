@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { FC } from 'react'
 import s from '../../../styles/css/Home.module.css'
 import { Header } from './Header'
-import { HeaderImg } from '../HomeLogo/HeaderImg'
+import { HeaderImg } from '../TOPLOGO/HeaderImg'
 
 interface LayoutProps {
   children: React.ReactNode
