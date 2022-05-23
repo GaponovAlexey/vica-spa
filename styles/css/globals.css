@@ -3,7 +3,7 @@
 @tailwind utilities;
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   @apply text-[#333333];
 }
 

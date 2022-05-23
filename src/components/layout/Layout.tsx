@@ -17,7 +17,8 @@ export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
         <link rel='icon' href='#!' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
-        <link href='https://fonts.googleapis.com/css2?family=Ubuntu&display=swap' />
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' />
+        <link href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' />
       </Head>
       <div className='max-w-[1080px] m-auto'>
         <Header />
