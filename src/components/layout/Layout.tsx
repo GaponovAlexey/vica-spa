@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { FC, ReactChild, ReactNode } from 'react'
+import { FC } from 'react'
+import s from '../../../styles/css/Home.module.css'
 import { Header } from './homePage/Header'
 import { HeaderImg } from './homePage/HeaderImg'
-import s from '../../../styles/css/Home.module.css'
 
 interface LayoutProps {
   children: React.ReactNode
