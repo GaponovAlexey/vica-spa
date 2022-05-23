@@ -6,11 +6,11 @@ export const Header = () => {
   return (
     <header
       id='home'
-      className='fixed h-1/1 w-full max-w-[1200px] left-auto top-auto z-10 '
+      className='fixed h-1/1 w-full max-w-[1080px] left-auto top-auto z-10 '
     >
       <div
         className='
-        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-4   bg-white '
+        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-4 bg-white '
       >
         <li>
           <a href='#home' onClick={() => setLanguageENG(!LanguageENG)}>

@@ -1,42 +1,12 @@
 .container {
-  padding: 0 2rem;
+  @apply px-8;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @apply min-h-screen flex-1 p-[4rem] flex flex-col justify-center items-center;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  @apply flex p-2 border-t border-[#eaeaea] justify-center  items-center;
 }
 /*# sourceMappingURL=Home.module.css.map */

@@ -1,11 +1,11 @@
 .container {
-  padding: 0 2rem;
+  @apply px-8;
 }
 
 .main {
-@apply min-h-screen flex-1 p-[4rem 0] flex flex-col justify-center items-center; 
+  @apply min-h-screen flex-1 p-[4rem] flex flex-col justify-center items-center;
 }
 
 .footer {
-  @apply flex padding-2 border-t-1-['#eaeaea'] justify-center  items-center;
+  @apply flex p-2 border-t border-[#eaeaea] justify-center  items-center;
 }
