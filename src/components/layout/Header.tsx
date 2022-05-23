@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header
       id='home'
-      className='fixed h-1/1 w-full max-w-[1080px] left-auto top-auto z-10 '
+      className='fixed h-1/1 w-full max-w-[1080px] left-auto top-0 z-10 '
     >
       <div
         className='

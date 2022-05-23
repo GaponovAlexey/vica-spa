@@ -1,9 +1,12 @@
 .container {
   @apply px-8;
 }
+.layout {
+  @apply max-w-[1080px] m-auto;
+}
 
 .main {
-  @apply min-h-screen flex-1 p-[4rem] flex flex-col justify-center items-center;
+  @apply min-h-screen flex-1 p-16 flex flex-col;
 }
 
 .footer {
