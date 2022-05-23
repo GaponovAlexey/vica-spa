@@ -3,12 +3,7 @@
 }
 
 .main {
-@apply min-h-screen flex-1 p-[4rem 0];
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@apply min-h-screen flex-1 p-[4rem 0] flex flex-col justify-center items-center; 
 }
 
 .footer {
