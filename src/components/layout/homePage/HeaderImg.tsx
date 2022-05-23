@@ -8,8 +8,8 @@ export const HeaderImg = () => {
       height={555}
       src={`/img/2.jpg`}
       alt='logo'
+      className='object-cover  border-radius-[5px] pt-5'
       priority
-      className='object-cover bg-red-200  border-radius-[5px] pt-5'
     />
   )
 }
