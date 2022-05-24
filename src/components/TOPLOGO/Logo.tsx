@@ -33,12 +33,17 @@ export const Logo = () => {
           ) : (
             <div className='bg-red-200'>Записаться</div>
           )}
+          {lang ? (
+            <div className='bg-red-200'>Price or Order</div>
+          ) : (
+            <div className='bg-red-200'>Узнать цену</div>
+          )}
         </a>
       </div>
 
-      <div className='text-right'>
+      <div className={s.lang}>
         <button onClick={() => dispatch(isLanguage())}>
-          {lang ? <div>Rus</div> : <div>ENG</div>}
+          {lang ? <div>rus</div> : <div>eng</div>}
         </button>
         <HeaderImg />
       </div>
