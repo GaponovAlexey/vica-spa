@@ -10,7 +10,7 @@ export const FourAbout = () => {
           {lang ? (
             <p>
               <br />
-              Now I'm getting my second high education in psychology. By the
+              Now {"I'm"} getting my second high education in psychology. By the
               way, my first education is English teacher 
             </p>
           ) : (

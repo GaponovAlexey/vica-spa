@@ -9,8 +9,8 @@ export const SecondAbout = () => {
         <div>
           {lang ? (
             <p>
-              <br /> In spite of that I'm not burnout emotionally because:
-              <br /> 1. I love what I'm doing.
+              <br /> In spite of that {"I'm"} not burnout emotionally because:
+              <br /> 1. I love what {"I'm"} doing.
               <br /> 2. I always grow as a professional.
               <br /> 3. I work in different areas.
             </p>
