@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
 import { useAppSelector } from '../../redux'
 
 export const Header = () => {
   const lang = useAppSelector((state) => state.lang.language)
-  const [LanguageENG, setLanguageENG] = useState(lang)
 
   return (
     <header
@@ -12,7 +10,7 @@ export const Header = () => {
     >
       <div
         className='
-        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-4 bg-white '
+        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-2 border-sky-300'
       >
         <li>
           <a href='#home'>{lang ? 'Home' : 'Главная'}</a>

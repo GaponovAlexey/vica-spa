@@ -7,10 +7,22 @@
 }
 
 .main {
-  @apply min-h-screen mt-16 flex-1  flex;
+  @apply min-h-screen mt-28;
 }
 
 .footer {
   @apply flex p-2 border-t border-[#eaeaea] justify-center  items-center;
+}
+
+.logoText {
+  @apply mb-6 flex flex-wrap justify-between;
+}
+
+.logoText > h1 {
+  @apply font-bold text-xl;
+}
+
+.logoText > p {
+  @apply font-light text-2xl;
 }
 /*# sourceMappingURL=Home.module.css.map */

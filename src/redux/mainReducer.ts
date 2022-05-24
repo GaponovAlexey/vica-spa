@@ -5,7 +5,7 @@ export interface IMainState {
 }
 
 const initialState: IMainState = {
-  language: true,
+  language: false,
 }
 
 export const mainState = createSlice({
