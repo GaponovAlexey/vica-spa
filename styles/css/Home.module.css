@@ -43,7 +43,7 @@
 }
 
 .about > h1 {
-  @apply text-center font-bold text-2xl mb-10;
+  @apply text-center font-bold text-2xl mb-10 text-sky-500;
 }
 
 .about .text {
