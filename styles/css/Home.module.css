@@ -15,7 +15,7 @@
 }
 
 .logoText {
-  @apply flex justify-between;
+  @apply flex justify-between mb-32;
 }
 
 .logoText > div > h1 {
@@ -39,7 +39,7 @@
 }
 
 .about {
-  @apply pt-10;
+  /* @apply  ; */
 }
 
 .about .texts {

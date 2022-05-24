@@ -15,15 +15,16 @@ export const ThreeAbout = () => {
         <div className={s.texts}>
           {lang ? (
             <p>
+              <br />
               On this site you can find some information about my services and
-              answers to your questions about particular problems. You can make
-              an appointment here.
+              answers to your questions about particular problems.
             </p>
           ) : (
             <p>
-              На этом сайте вы сможете увидеть то, чем я могу быть вам полезна,
-              и, возможно, найти некоторые ответы на свои вопросы по конкретным
-              проблемам. Записаться на процедуру можно
+              <br />
+              На этом сайте вы сможете увидеть то, чем я могу быть вам полезна и
+              возможно, найти некоторые ответы на свои вопросы по конкретным
+              проблемам.
             </p>
           )}
         </div>
