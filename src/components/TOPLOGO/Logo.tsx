@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { useAppSelector } from '../../redux'
 import { isLanguage } from '../../redux/mainReducer'
-import { HeaderImg } from './HeaderImg'
+import { CustomIMAGE } from '../utils/CustomIMAGE'
 import s from '../../../styles/css/Home.module.css'
 
 export const Logo = () => {
@@ -45,7 +45,7 @@ export const Logo = () => {
         <button onClick={() => dispatch(isLanguage())}>
           {lang ? <div>rus</div> : <div>eng</div>}
         </button>
-        <HeaderImg />
+        <CustomIMAGE style={'object-cover'} height={600} width={600} src={`/img/2.jpg`} />
       </div>
     </div>
   )

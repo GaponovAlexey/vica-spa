@@ -30,9 +30,6 @@ export const Header = () => {
         <li>
           <a href='#contacts'>{lang ? 'Contacts' : 'Контакты'}</a>
         </li>
-        <li>
-          <a>{lang ? 'Map' : 'Как меня найти'}</a>
-        </li>
       </div>
 
       {/* <div className='fixed top-[15px]'>
