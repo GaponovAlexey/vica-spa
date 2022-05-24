@@ -1,18 +1,21 @@
 import { useState } from 'react'
+import { useSelector } from 'react-redux'
+import { isLanguage } from '../../redux/mainReducer'
 import { HeaderImg } from './HeaderImg'
 
 export const Logo = () => {
-  const [LanguageENG, setLanguageENG] = useState(false)
+  const { lang } = useSelector(state => state.lang.)
+  const [LanguageENG, setLanguageENG] = useState(lang)
 
   return (
     <div>
       <div className='flex flex-wrap justify-between'>
         {LanguageENG ? (
-          <h1 className='text-[24px] font-bold text-left '>
+          <h1 className=' font-bold text-left '>
             Podolog <br /> Viktoria <br /> Olegovna
           </h1>
         ) : (
-          <h1 className='text-[24px] font-bold text-left '>
+          <h1 className=' font-bold text-left '>
             Подолог
             <br /> Виктория
             <br /> Ясная
@@ -31,7 +34,6 @@ export const Logo = () => {
         )}
       </div>
       <HeaderImg />
-      
     </div>
   )
 }
