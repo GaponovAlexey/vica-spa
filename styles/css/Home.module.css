@@ -15,14 +15,14 @@
 }
 
 .logoText {
-  @apply mb-6 flex flex-wrap justify-between;
+  @apply flex justify-between;
 }
 
-.logoText > h1 {
+.logoText > div > h1 {
   @apply font-bold text-xl;
 }
 
-.logoText > p {
+.logoText > div > p {
   @apply font-light text-2xl;
 }
 /*# sourceMappingURL=Home.module.css.map */

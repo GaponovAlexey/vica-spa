@@ -9,18 +9,12 @@ export const Logo = () => {
   const dispatch = useDispatch()
 
   return (
-    <div>
-      <div className={s.logoText}>
+    <div className={s.logoText}>
+      <div>
         {lang ? (
-          <h1>
-            Podolog <br /> Viktoria <br /> Olegovna
-          </h1>
+          <h1>Podolog Viktorias Olegovna</h1>
         ) : (
-          <h1>
-            Подолог
-            <br /> Виктория
-            <br /> Ясная
-          </h1>
+          <h1>Подолог Виктория Ясная</h1>
         )}
         {lang ? (
           <p>
@@ -33,13 +27,6 @@ export const Logo = () => {
             <br /> Комендантский проспект (Санкт Петербург)
           </p>
         )}
-
-        <button onClick={() => dispatch(isLanguage())}>
-          {lang ? <div>Rus</div> : <div>ENG</div>}
-        </button>
-      </div>
-      <HeaderImg />
-      <div className='flex'>
         <a href='https://dikidi.net/141929?p=0.pi'>
           {lang ? (
             <div className='bg-red-200'>Price or Order</div>
@@ -47,6 +34,13 @@ export const Logo = () => {
             <div className='bg-red-200'>Записаться</div>
           )}
         </a>
+      </div>
+
+      <div className='text-right'>
+        <button onClick={() => dispatch(isLanguage())}>
+          {lang ? <div>Rus</div> : <div>ENG</div>}
+        </button>
+        <HeaderImg />
       </div>
     </div>
   )

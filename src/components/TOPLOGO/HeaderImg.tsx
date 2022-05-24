@@ -8,6 +8,7 @@ export const HeaderImg = () => {
       height={300}
       src={`/img/2.jpg`}
       alt='logo'
+      quality={100}
       className='object-cover '
       priority
     />
