@@ -1,14 +1,11 @@
 import { useAppSelector } from '../../redux'
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
-import { SecondAbout } from './SecondAbout'
-export const About = () => {
+export const SecondAbout = () => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
     <div className={s.about}>
-      <h1>{lang ? `So, a little about me.` : `Немного обо мне`}</h1>
-      <div className={s.text} >
-        <CustomIMAGE style={'object-cover object-[0_35%] '} height={600} width={600} src={`/img/6.jpg`} />
+      <div className={s.text}>
         <div>
           <p>
             {lang
@@ -33,8 +30,13 @@ export const About = () => {
           на процедуру можно `}
           </p>
         </div>
+        <CustomIMAGE
+          style={'object-cover object-[0_35%] '}
+          height={600}
+          width={600}
+          src={`/img/4.jpg`}
+        />
       </div>
-      <SecondAbout />
     </div>
   )
 }

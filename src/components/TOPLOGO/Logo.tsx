@@ -45,7 +45,7 @@ export const Logo = () => {
         <button onClick={() => dispatch(isLanguage())}>
           {lang ? <div>rus</div> : <div>eng</div>}
         </button>
-        <CustomIMAGE style={'object-cover'} height={600} width={600} src={`/img/2.jpg`} />
+        <CustomIMAGE style={'object-cover object-[0_45%]'} height={600} width={600} src={`/img/2.jpg`} />
       </div>
     </div>
   )
