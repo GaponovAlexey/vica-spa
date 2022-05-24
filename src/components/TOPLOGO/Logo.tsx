@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useAppSelector } from '../../redux'
 import { isLanguage } from '../../redux/mainReducer'
 import { HeaderImg } from './HeaderImg'
 
 export const Logo = () => {
-  const { lang } = useSelector(state => state.lang.)
-  const [LanguageENG, setLanguageENG] = useState(lang)
+  const lang = useAppSelector((state) => state.lang.language)
+  const dispatch = useDispatch()
 
   return (
     <div>
       <div className='flex flex-wrap justify-between'>
-        {LanguageENG ? (
+        {lang ? (
           <h1 className=' font-bold text-left '>
             Podolog <br /> Viktoria <br /> Olegovna
           </h1>
@@ -21,7 +22,7 @@ export const Logo = () => {
             <br /> Ясная
           </h1>
         )}
-        {LanguageENG ? (
+        {lang ? (
           <div>
             Pedicure Professional <br /> in the profession since 2014,
             <br /> Komendantsky Prospekt (Saint Petersburg)
@@ -32,6 +33,8 @@ export const Logo = () => {
             <br /> Комендантский проспект <br /> (Санкт Петербург)
           </div>
         )}
+        {lang ? <div>Price or Order</div> : <div>Записаться</div>}
+      <button onClick={() => dispatch(isLanguage())}>rus|eng</button>
       </div>
       <HeaderImg />
     </div>

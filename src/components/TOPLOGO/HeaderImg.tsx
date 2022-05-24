@@ -9,7 +9,7 @@ export const HeaderImg = () => {
       src={`/img/2.jpg`}
       alt='logo'
       className='object-cover w-1/1'
-      // priority
+      priority
     />
   )
 }

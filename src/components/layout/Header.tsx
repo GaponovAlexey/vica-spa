@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useAppSelector } from '../../redux'
 
 export const Header = () => {
-  const [LanguageENG, setLanguageENG] = useState(false)
+  const lang = useAppSelector((state) => state.lang.language)
+  const [LanguageENG, setLanguageENG] = useState(lang)
 
   return (
     <header
@@ -13,39 +15,25 @@ export const Header = () => {
         flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-4 bg-white '
       >
         <li>
-          <a href='#home' onClick={() => setLanguageENG(!LanguageENG)}>
-            {LanguageENG ? 'Home' : 'Главная'}
-          </a>
+          <a href='#home'>{lang ? 'Home' : 'Главная'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)} href='#about'>
-            {LanguageENG ? 'About' : 'Обо мне'}
-          </a>
+          <a href='#about'>{lang ? 'About' : 'Обо мне'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)} href='#skills'>
-            {LanguageENG ? 'Skills' : 'Услуги'}
-          </a>
+          <a href='#skills'>{lang ? 'Skills' : 'Услуги'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)} href='#comments'>
-            {LanguageENG ? 'Comments' : 'Отзывы'}
-          </a>
+          <a href='#comments'>{lang ? 'Comments' : 'Отзывы'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)} href='#certificates'>
-            {LanguageENG ? 'Certificates' : 'Сертификаты'}
-          </a>
+          <a href='#certificates'>{lang ? 'Certificates' : 'Сертификаты'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)} href='#contacts'>
-            {LanguageENG ? 'Contacts' : 'Контакты'}
-          </a>
+          <a href='#contacts'>{lang ? 'Contacts' : 'Контакты'}</a>
         </li>
         <li>
-          <a onClick={() => setLanguageENG(!LanguageENG)}>
-            {LanguageENG ? 'Map' : 'Как меня найти'}
-          </a>
+          <a>{lang ? 'Map' : 'Как меня найти'}</a>
         </li>
       </div>
 
