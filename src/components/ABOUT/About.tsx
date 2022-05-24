@@ -19,7 +19,7 @@ export const About = () => {
         <div className={s.texts}>
           {lang ? (
             <p>
-              My name is Victoria <br /> and I most of all I love to see the
+              My name is Victoria and I most of all I love to see <br /> the
               results of my work.
               <br /> I started in profession in 2014.
               <br /> Finished more than 20 courses.
@@ -27,7 +27,7 @@ export const About = () => {
             </p>
           ) : (
             <p>
-              Меня зовут Виктория <br /> и я обожаю видеть плоды своей работы.{' '}
+              Меня зовут Виктория и я обожаю видеть <br /> плоды своей работы.{' '}
               <br />
               В профессии с 2014 года.
               <br /> Прошла более 20 курсов <br /> Провела больше 6000 процедур

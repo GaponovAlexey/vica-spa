@@ -47,7 +47,7 @@
     @apply grid grid-cols-2 h-[350px];
     > div {
       > p {
-        @apply whitespace-pre-line;
+        @apply whitespace-pre-line text-2xl;
       }
     }
   }

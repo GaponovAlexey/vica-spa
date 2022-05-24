@@ -55,6 +55,6 @@
 }
 
 .about .text > div > p {
-  @apply whitespace-pre-line;
+  @apply whitespace-pre-line text-2xl;
 }
 /*# sourceMappingURL=Home.module.css.map */
