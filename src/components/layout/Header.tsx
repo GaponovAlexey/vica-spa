@@ -1,15 +1,24 @@
+import { useState } from 'react'
 import { useAppSelector } from '../../redux'
+import { cl } from '../utils/cl'
+import { Burger } from './Burger'
 
 export const Header = () => {
   const lang = useAppSelector((state) => state.lang.language)
+  const [click, setclick] = useState(false)
+  console.log(click)
 
+  {
+    click && <Burger />
+  }
   return (
     <header
       id='home'
-      className='fixed h-1/1 w-full max-w-[1080px] left-auto top-0 z-10 '
+      className={cl('fixed h-1/1 w-full max-w-[1080px] left-auto top-0 z-10')}
     >
       <div
         className='
+        sm:hidden md:hidden lg:flex
         flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-2 border-sky-300'
       >
         <li>
@@ -32,13 +41,18 @@ export const Header = () => {
         </li>
       </div>
 
-      {/* <div className='fixed top-[15px]'>
-        <svg viewBox='0 0 100 80' width='40' height='40'>
+      <div className='xl:hidden  lg:hidden '>
+        <svg
+          onClick={() => setclick(!click)}
+          viewBox='0 0 100 80'
+          width='40'
+          height='40'
+        >
           <rect width='100' height='20' rx='8' />
           <rect y='30' width='100' height='20' rx='8' />
           <rect y='60' width='100' height='20' rx='8' />
         </svg>
-      </div> */}
+      </div>
     </header>
   )
 }
