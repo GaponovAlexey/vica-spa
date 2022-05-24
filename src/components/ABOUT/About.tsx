@@ -2,6 +2,7 @@ import { useAppSelector } from '../../redux'
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
 import { SecondAbout } from './SecondAbout'
+import { ThreeAbout } from './ThreeAbout'
 export const About = () => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
@@ -34,6 +35,7 @@ export const About = () => {
         </div>
       </div>
       <SecondAbout />
+      <ThreeAbout />
     </div>
   )
 }
