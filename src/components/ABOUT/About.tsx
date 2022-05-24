@@ -3,6 +3,7 @@ import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
 import { SecondAbout } from './SecondAbout'
 import { ThreeAbout } from './ThreeAbout'
+import { FourAbout } from './FourAbout'
 export const About = () => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
@@ -10,12 +11,12 @@ export const About = () => {
       <h1>{lang ? `So, a little about me.` : `Немного обо мне`}</h1>
       <div className={s.text}>
         <CustomIMAGE
-          style={'object-cover object-[0_25%] '}
+          style={'object-cover object-[0_30%] '}
           height={600}
           width={600}
           src={`/img/6.jpg`}
         />
-        <div className={s.texts} >
+        <div className={s.texts}>
           {lang ? (
             <p>
               My name is Victoria <br /> and I most of all I love to see the
@@ -36,6 +37,7 @@ export const About = () => {
       </div>
       <SecondAbout />
       <ThreeAbout />
+      <FourAbout />
     </div>
   )
 }

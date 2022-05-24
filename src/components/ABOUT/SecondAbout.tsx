@@ -9,25 +9,22 @@ export const SecondAbout = () => {
         <div>
           {lang ? (
             <p>
-              In spite of that I'm not burnout emotionally because: I love what
-              I'm doing, I always grow as a professional, I work in different
-              areas. Now I'm getting my second high education in psychology. By
-              the way, my first education is English teacher 🙃
+              <br /> In spite of that I'm not burnout emotionally because:
+              <br /> 1. I love what I'm doing.
+              <br /> 2. I always grow as a professional.
+              <br /> 3. I work in different areas.
             </p>
           ) : (
             <p>
-              Не выгораю по трём причинам: <br />
-              Очень люблю то, чем занимаюсь,
-              <br /> Постоянно развиваюсь.
-              <br /> Работаю в разных направлениях.
-              <br /> Получаю второе высшее образование по специальности
-              "психолог" По первому образованию "учитель английского" <br />
-              так что май инглиш из квайт вэл
+              <br /> Не выгораю по трём причинам:
+              <br /> 1. Очень люблю то, чем занимаюсь.
+              <br /> 2. Постоянно развиваюсь.
+              <br /> 3. Работаю в разных направлениях.
             </p>
           )}
         </div>
         <CustomIMAGE
-          style={'object-cover object-[0%_35%] '}
+          style={'object-cover object-[0%_85%] '}
           height={600}
           width={600}
           src={`/img/4.jpg`}

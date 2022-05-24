@@ -7,7 +7,7 @@ export const ThreeAbout = () => {
     <div className={s.about}>
       <div className={s.text}>
         <CustomIMAGE
-          style={'object-cover object-[0_35%] '}
+          style={'object-cover object-[0_75%] '}
           height={600}
           width={600}
           src={`/img/1.jpg`}
