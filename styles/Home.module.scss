@@ -22,5 +22,8 @@
     > p {
       @apply font-light text-2xl;
     }
+    > a {
+      @apply flex text-blue-500;
+    }
   }
 }

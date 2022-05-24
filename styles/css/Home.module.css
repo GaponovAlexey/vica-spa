@@ -25,4 +25,8 @@
 .logoText > div > p {
   @apply font-light text-2xl;
 }
+
+.logoText > div > a {
+  @apply flex text-blue-500;
+}
 /*# sourceMappingURL=Home.module.css.map */
