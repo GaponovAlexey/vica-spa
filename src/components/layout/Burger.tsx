@@ -1,17 +1,27 @@
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { useAppSelector } from '../../redux'
 import { cl } from '../utils/cl'
+import s from '../../../styles/css/Home.module.css'
 
-export const Burger = () => {
+interface IBurger {
+  click: boolean
+  setClick: (click: boolean) => void
+}
+
+export const Burger: FC<IBurger> = ({ click, setClick }) => {
   const lang = useAppSelector((state) => state.lang.language)
-  const [click, setclick] = useState(false)
-
-  
 
   return (
-    <div>
+    <div className={s.burger}>
       <li>
-        <a href='#home'>{lang ? 'Home' : 'Главная'}</a>
+        <a
+          onClick={() => {
+            setClick(!click)
+          }}
+          href='#home'
+        >
+          {lang ? 'Home' : 'Главная'}
+        </a>
       </li>
       <li>
         <a href='#about'>{lang ? 'About' : 'Обо мне'}</a>

@@ -5,11 +5,11 @@ import { Burger } from './Burger'
 
 export const Header = () => {
   const lang = useAppSelector((state) => state.lang.language)
-  const [click, setclick] = useState(false)
+  const [click, setClick] = useState(false)
   console.log(click)
 
-  {
-    click && <Burger />
+  if (click) {
+    return <Burger click={click} setClick={setClick} />
   }
   return (
     <header
@@ -43,7 +43,7 @@ export const Header = () => {
 
       <div className='xl:hidden  lg:hidden '>
         <svg
-          onClick={() => setclick(!click)}
+          onClick={() => setClick(!click)}
           viewBox='0 0 100 80'
           width='40'
           height='40'
