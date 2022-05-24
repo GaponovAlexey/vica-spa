@@ -7,7 +7,7 @@ export const About = () => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
     <div className={s.about}>
-      <h1 >{lang ? `So, a little about me.` : `Немного обо мне`}</h1>
+      <h1>{lang ? `So, a little about me.` : `Немного обо мне`}</h1>
       <div className={s.text}>
         <CustomIMAGE
           style={'object-cover object-[0_25%] '}
@@ -15,7 +15,7 @@ export const About = () => {
           width={600}
           src={`/img/6.jpg`}
         />
-        <div className='text-xl'>
+        <div className={s.texts} >
           {lang ? (
             <p>
               My name is Victoria <br /> and I most of all I love to see the

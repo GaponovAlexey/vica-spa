@@ -42,16 +42,16 @@
   @apply pt-10;
 }
 
+.about .texts {
+  @apply ml-10;
+}
+
 .about > h1 {
   @apply text-center font-bold text-2xl mb-10 text-sky-500;
 }
 
 .about .text {
-  @apply grid grid-cols-2  gap-6;
-}
-
-.about .text > div {
-  @apply grid gap-4;
+  @apply grid grid-cols-2 h-[350px];
 }
 
 .about .text > div > p {

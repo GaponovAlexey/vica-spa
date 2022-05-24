@@ -36,14 +36,16 @@
 }
 
 .about {
-  @apply pt-10 ;
+  @apply pt-10;
+  .texts {
+    @apply ml-10;
+  }
   > h1 {
     @apply text-center font-bold text-2xl mb-10 text-sky-500;
   }
   .text {
-    @apply grid grid-cols-2  gap-6;
+    @apply grid grid-cols-2 h-[350px];
     > div {
-      @apply grid gap-4;
       > p {
         @apply whitespace-pre-line;
       }

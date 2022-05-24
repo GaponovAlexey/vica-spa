@@ -12,7 +12,7 @@ export const ThreeAbout = () => {
           width={600}
           src={`/img/1.jpg`}
         />
-        <div>
+        <div className={s.texts}>
           {lang ? (
             <p>
               On this site you can find some information about my services and
