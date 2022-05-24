@@ -10,7 +10,7 @@ export const Logo = () => {
 
   return (
     <div>
-      <div className='flex flex-wrap justify-between'>
+      <div className='mt-10 mb-10 flex flex-wrap justify-between'>
         {lang ? (
           <h1 className=' font-bold text-left '>
             Podolog <br /> Viktoria <br /> Olegovna
@@ -33,8 +33,14 @@ export const Logo = () => {
             <br /> Комендантский проспект <br /> (Санкт Петербург)
           </div>
         )}
-        {lang ? <div>Price or Order</div> : <div>Записаться</div>}
-      <button onClick={() => dispatch(isLanguage())}>rus|eng</button>
+        {lang ? (
+          <button className='bg-red-200'>Price or Order</button>
+        ) : (
+          <button className='bg-red-200'>Записаться</button>
+        )}
+        <button onClick={() => dispatch(isLanguage())}>
+          {lang ? <div>Eng</div> : <div>rus</div>}
+        </button>
       </div>
       <HeaderImg />
     </div>

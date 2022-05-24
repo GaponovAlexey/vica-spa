@@ -7,7 +7,7 @@
 }
 
 .main {
-  @apply min-h-screen flex-1 p-16 flex flex-col;
+  @apply min-h-screen mt-16 flex-1  flex;
 }
 
 .footer {
