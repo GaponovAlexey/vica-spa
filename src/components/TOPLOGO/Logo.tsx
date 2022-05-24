@@ -31,6 +31,7 @@ export const Logo = () => {
         )}
       </div>
       <HeaderImg />
+      
     </div>
   )
 }
