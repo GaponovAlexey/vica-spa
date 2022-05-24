@@ -11,7 +11,7 @@ export const FourAbout = () => {
             <p>
               <br />
               Now I'm getting my second high education in psychology. By the
-              way, my first education is English teacher 🙃
+              way, my first education is English teacher 
             </p>
           ) : (
             <p>
