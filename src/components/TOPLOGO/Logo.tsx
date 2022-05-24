@@ -1,12 +1,10 @@
-import { useDispatch } from 'react-redux'
-import { useAppSelector } from '../../redux'
-import { isLanguage } from '../../redux/mainReducer'
-import { CustomIMAGE } from '../utils/CustomIMAGE'
 import s from '../../../styles/css/Home.module.css'
+import { useAppSelector } from '../../redux'
+import { CustomIMAGE } from '../utils/CustomIMAGE'
+import Toggle from '../utils/Toggle'
 
 export const Logo = () => {
   const lang = useAppSelector((state) => state.lang.language)
-  const dispatch = useDispatch()
 
   return (
     <div className={s.logoText}>
@@ -42,10 +40,15 @@ export const Logo = () => {
       </div>
 
       <div className={s.lang}>
-        <button onClick={() => dispatch(isLanguage())}>
-          {lang ? <div>rus</div> : <div>eng</div>}
-        </button>
-        <CustomIMAGE style={'object-cover object-[0_45%]'} height={600} width={600} src={`/img/2.jpg`} />
+        <div>
+          <Toggle />
+        </div>
+        <CustomIMAGE
+          style={'object-cover object-[0_45%]'}
+          height={600}
+          width={600}
+          src={`/img/2.jpg`}
+        />
       </div>
     </div>
   )

@@ -6,7 +6,7 @@
 }
 
 .main {
-  @apply min-h-screen mt-28;
+  @apply min-h-screen mt-36;
 }
 
 .footer {
@@ -30,8 +30,8 @@
 
 .lang {
   @apply text-right relative;
-  > button {
-    @apply absolute -top-10 right-0;
+  > div {
+    @apply absolute -top-12 right-0;
   }
 }
 
