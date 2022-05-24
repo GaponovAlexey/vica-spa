@@ -15,15 +15,15 @@
 }
 
 .logoText {
-  @apply flex justify-between mb-32;
+  @apply flex justify-between sm:mb-10 mb-32;
 }
 
 .logoText > div > h1 {
-  @apply font-bold text-2xl mb-10;
+  @apply font-bold text-2xl mb-10 text-sky-800 leading-9;
 }
 
 .logoText > div > p {
-  @apply font-light  text-2xl mb-10;
+  @apply font-light  text-2xl mb-10 leading-9;
 }
 
 .logoText > div > a {
@@ -36,10 +36,6 @@
 
 .lang > div {
   @apply absolute -top-12 right-0;
-}
-
-.about {
-  /* @apply  ; */
 }
 
 .about .texts {
@@ -55,6 +51,6 @@
 }
 
 .about .text > div > p {
-  @apply whitespace-pre-line text-2xl;
+  @apply whitespace-pre-line text-2xl leading-9;
 }
 /*# sourceMappingURL=Home.module.css.map */

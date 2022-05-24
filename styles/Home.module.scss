@@ -6,7 +6,7 @@
 }
 
 .main {
-  @apply min-h-screen mt-36 ;
+  @apply min-h-screen mt-36;
 }
 
 .footer {
@@ -14,13 +14,13 @@
 }
 
 .logoText {
-  @apply flex justify-between mb-32;
+  @apply flex justify-between sm:mb-10 mb-32;
   > div {
     > h1 {
-      @apply font-bold text-2xl mb-10;
+      @apply font-bold text-2xl mb-10 text-sky-800 leading-9;
     }
     > p {
-      @apply font-light  text-2xl mb-10;
+      @apply font-light  text-2xl mb-10 leading-9;
     }
     > a {
       @apply flex max-w-xs text-blue-500 justify-between;
@@ -36,7 +36,6 @@
 }
 
 .about {
-  /* @apply  ; */
   .texts {
     @apply ml-10;
   }
@@ -47,7 +46,7 @@
     @apply grid grid-cols-2 h-[350px];
     > div {
       > p {
-        @apply whitespace-pre-line text-2xl;
+        @apply whitespace-pre-line text-2xl leading-9;
       }
     }
   }
