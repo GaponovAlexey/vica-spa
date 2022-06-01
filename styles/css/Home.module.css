@@ -7,7 +7,7 @@
 }
 
 .main {
-  @apply min-h-screen mt-36;
+  @apply min-h-screen;
 }
 
 .footer {
@@ -15,7 +15,7 @@
 }
 
 .logoText {
-  @apply flex justify-between sm:mb-10 mb-32;
+  @apply flex justify-between items-center min-h-screen;
 }
 
 .logoText > div > h1 {

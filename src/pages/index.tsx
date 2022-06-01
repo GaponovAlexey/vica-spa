@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className={s.container}>
       <div className={s.main}>
         <Logo />
-        <About/>
+        <About />
       </div>
     </div>
   )
