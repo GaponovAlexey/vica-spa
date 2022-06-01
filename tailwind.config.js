@@ -7,6 +7,9 @@ module.exports = {
       lg: '1024px',
       xl: '1440px',
     },
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif'],
+    },
   },
   plugins: [],
 }
