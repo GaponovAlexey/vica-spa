@@ -6,7 +6,7 @@
 }
 
 .main {
-  @apply min-h-screen ;
+  @apply min-h-screen;
 }
 
 .footer {
@@ -17,7 +17,7 @@
   @apply flex justify-between items-center min-h-screen;
   > div {
     > h1 {
-      @apply font-bold text-2xl mb-10 text-sky-800 leading-9;
+      @apply font-bold text-[42px] mb-10 text-sky-800 leading-9;
     }
     > p {
       @apply font-light  text-2xl mb-10 leading-9;
