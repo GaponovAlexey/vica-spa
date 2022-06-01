@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { useAppSelector } from '../../redux'
-import { cl } from '../utils/cl'
 import { Burger } from './Burger'
-
+import s from '../../../styles/css/Home.module.css'
 export const Header = () => {
   const lang = useAppSelector((state) => state.lang.language)
   const [click, setClick] = useState(false)
@@ -14,7 +13,7 @@ export const Header = () => {
   return (
     <header
       id='home'
-      className={cl('fixed h-1/1 w-full max-w-[1080px] left-auto top-0 z-10')}
+      className={s.header}
     >
       <div
         className='

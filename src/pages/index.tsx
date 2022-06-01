@@ -7,8 +7,10 @@ const Home: NextPage = () => {
   return (
     <div className={s.container}>
       <div className={s.main}>
-        <Logo />
-        <About />
+        <div className={s.layout}>
+          <Logo />
+        </div>
+          <About />
       </div>
     </div>
   )

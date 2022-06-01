@@ -8,6 +8,9 @@
 .main {
   @apply min-h-screen;
 }
+.header {
+  @apply fixed mx-auto  max-w-[1080px] w-full;
+}
 
 .footer {
   @apply flex p-2 border-t border-[#eaeaea] justify-center  items-center;
@@ -36,7 +39,7 @@
 }
 
 .about {
-  /* @apply   ; */
+  @apply bg-red-200;
   .texts {
     @apply ml-10;
   }

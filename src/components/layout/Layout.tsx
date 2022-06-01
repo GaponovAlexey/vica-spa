@@ -10,12 +10,9 @@ interface LayoutProps {
 export const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
     <>
-      
-      <div className={s.layout}>
-        <Header />
-        {children}
-        <footer className={s.footer}>footer</footer>
-      </div>
+      <Header />
+      {children}
+      <footer className={s.footer}>footer</footer>
     </>
   )
 }
