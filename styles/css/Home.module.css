@@ -38,6 +38,10 @@
   @apply absolute -top-12 right-0;
 }
 
+.about {
+  /* @apply   ; */
+}
+
 .about .texts {
   @apply ml-10;
 }

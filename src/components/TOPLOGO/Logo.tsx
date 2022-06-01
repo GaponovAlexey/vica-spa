@@ -12,7 +12,7 @@ export const Logo = () => {
         {lang ? (
           <h1>Podolog Viktorias Olegovna</h1>
         ) : (
-          <h1>Подолог Виктория Ясная</h1>
+          <h1>Подолог <br/> Виктория Ясная</h1>
         )}
         {lang ? (
           <p>
