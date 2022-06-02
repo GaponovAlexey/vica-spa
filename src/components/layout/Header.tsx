@@ -1,17 +1,17 @@
 import { useState } from 'react'
+import s from '../../../styles/css/Home.module.css'
 import { useAppSelector } from '../../redux'
 import { Burger } from './Burger'
-import s from '../../../styles/css/Home.module.css'
+
 export const Header = () => {
   const lang = useAppSelector((state) => state.lang.language)
   const [click, setClick] = useState(false)
-  console.log(click)
-
   if (click) {
     return <Burger click={click} setClick={setClick} />
   }
   return (
     <header id='home' className={s.header}>
+  
       <div>
         <li>
           <a href='#home'>{lang ? 'Home' : 'Главная'}</a>
@@ -33,7 +33,7 @@ export const Header = () => {
         </li>
       </div>
 
-      <span className='xl:hidden  lg:hidden '>
+      <p className='xl:hidden  lg:hidden '>
         <svg
           onClick={() => setClick(!click)}
           viewBox='0 0 100 80'
@@ -44,7 +44,7 @@ export const Header = () => {
           <rect y='30' width='100' height='20' rx='8' />
           <rect y='60' width='100' height='20' rx='8' />
         </svg>
-      </span>
+      </p>
     </header>
   )
 }
