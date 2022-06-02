@@ -11,7 +11,12 @@
 }
 
 .header {
-  @apply fixed mx-auto left-1/2 -translate-x-1/2  max-w-[1080px] w-full;
+  @apply fixed mx-auto left-1/2 -translate-x-1/2  max-w-[1080px] w-full z-10 bg-white;
+}
+
+.header > div {
+  @apply sm:hidden md:hidden lg:flex
+    flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-2 border-sky-300;
 }
 
 .footer {

@@ -11,15 +11,8 @@ export const Header = () => {
     return <Burger click={click} setClick={setClick} />
   }
   return (
-    <header
-      id='home'
-      className={s.header}
-    >
-      <div
-        className='
-        sm:hidden md:hidden lg:flex
-        flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-2 border-sky-300'
-      >
+    <header id='home' className={s.header}>
+      <div>
         <li>
           <a href='#home'>{lang ? 'Home' : 'Главная'}</a>
         </li>
@@ -40,7 +33,7 @@ export const Header = () => {
         </li>
       </div>
 
-      <div className='xl:hidden  lg:hidden '>
+      <span className='xl:hidden  lg:hidden '>
         <svg
           onClick={() => setClick(!click)}
           viewBox='0 0 100 80'
@@ -51,7 +44,7 @@ export const Header = () => {
           <rect y='30' width='100' height='20' rx='8' />
           <rect y='60' width='100' height='20' rx='8' />
         </svg>
-      </div>
+      </span>
     </header>
   )
 }
