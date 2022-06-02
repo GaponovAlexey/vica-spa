@@ -1,5 +1,5 @@
 .container {
-  @apply px-8;
+  /* @apply px-8; */
 }
 .layout {
   @apply max-w-[1080px] m-auto;
@@ -9,7 +9,7 @@
   @apply min-h-screen;
 }
 .header {
-  @apply fixed mx-auto  max-w-[1080px] w-full;
+  @apply fixed mx-auto left-1/2 -translate-x-1/2  max-w-[1080px] w-full;
 }
 
 .footer {
@@ -38,13 +38,16 @@
   }
 }
 
+.reaperAbout {
+  @apply bg-gray-50 ;
+}
+
 .about {
-  @apply bg-red-200;
   .texts {
-    @apply ml-10;
+    @apply  ml-10;
   }
   > h1 {
-    @apply text-center font-bold text-2xl mb-10 text-sky-500;
+    @apply text-center font-bold pt-10 text-[42px] mb-10 text-blue-700;
   }
   .text {
     @apply grid grid-cols-2 h-[350px];
