@@ -1,3 +1,4 @@
+import { GetStaticPropsContext } from 'next';
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -20,4 +21,12 @@ export default function Document() {
       </body>
     </Html>
   )
+}
+
+export async function getStaticProps({locale}: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`../../lang/${locale}.json`)).default
+    }
+  };
 }

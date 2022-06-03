@@ -9,9 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <NextIntlProvider messages={pageProps.messages}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </NextIntlProvider>
     </Provider>
   )

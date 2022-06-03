@@ -18,7 +18,6 @@ export const mainState = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
 export const {isLanguage} = mainState.actions
 
 export default mainState.reducer

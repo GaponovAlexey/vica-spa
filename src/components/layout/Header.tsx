@@ -1,9 +1,11 @@
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import s from '../../../styles/css/Home.module.css'
 import { useAppSelector } from '../../redux'
 import { Burger } from './Burger'
 
 export const Header = () => {
+  const t = useTranslations('home')
   const lang = useAppSelector((state) => state.lang.language)
   const [click, setClick] = useState(false)
   if (click) {
