@@ -5,33 +5,31 @@ import { useAppSelector } from '../../redux'
 import { Burger } from './Burger'
 
 export const Header = () => {
-  const t = useTranslations('home')
-  const lang = useAppSelector((state) => state.lang.language)
+  const t = useTranslations('header')
   const [click, setClick] = useState(false)
   if (click) {
     return <Burger click={click} setClick={setClick} />
   }
   return (
     <header id='home' className={s.header}>
-  
       <div>
         <li>
-          <a href='#home'>{lang ? 'Home' : 'Главная'}</a>
+          <a href='#home'>{t('home')}</a>
         </li>
         <li>
-          <a href='#about'>{lang ? 'About' : 'Обо мне'}</a>
+          <a href='#about'>{t('about')}</a>
         </li>
         <li>
-          <a href='#skills'>{lang ? 'Skills' : 'Услуги'}</a>
+          <a href='#skills'>{t('skills')}</a>
         </li>
         <li>
-          <a href='#comments'>{lang ? 'Comments' : 'Отзывы'}</a>
+          <a href='#comments'>{t('comments')}</a>
         </li>
         <li>
-          <a href='#certificates'>{lang ? 'Certificates' : 'Сертификаты'}</a>
+          <a href='#certificates'>{t('certificates')}</a>
         </li>
         <li>
-          <a href='#contacts'>{lang ? 'Contacts' : 'Контакты'}</a>
+          <a href='#contacts'>{t('contact')}</a>
         </li>
       </div>
 

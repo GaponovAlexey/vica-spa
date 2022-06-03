@@ -7,13 +7,11 @@ import { Layout } from '../components/layout'
 import { Logo } from '../components/TOPLOGO'
 
 const Home: NextPage = () => {
-  const t = useTranslations('home')
   return (
     <>
       <Layout>
         <div className={s.container}>
           <div className={s.main}>
-            <h1 className=' fixed z-20'>{t('welcome')}</h1>;
             <div className={s.layout}>
               <Logo />
             </div>

@@ -1,1 +1,13 @@
-{"home": {"welcome": "Welcome"}}
+{
+  "home": {
+    "welcome": "Welcome"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "comments": "Comments",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  }
+}
