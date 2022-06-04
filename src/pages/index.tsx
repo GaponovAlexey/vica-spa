@@ -10,6 +10,7 @@ const Home: NextPage = () => {
   return (
     <>
     <Head>
+      
       <title>Home</title>
     </Head>
       <div className='fixed top-20 right-0 '>

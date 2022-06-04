@@ -5,6 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+      <link rel="shortcut icon" href="/favicon.ico" />
         <link
           href='https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic'
           rel='stylesheet'
