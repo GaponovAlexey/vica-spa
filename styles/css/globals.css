@@ -4,7 +4,8 @@
 html,
 body {
   height: 100%;
-  @apply text-[#333333] text-[16px] font-sans;
+  /* @apply font-sans; */
+  @apply font-ubu;
 }
 
 a,

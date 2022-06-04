@@ -9,6 +9,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
+      ubu: ['Ubuntu', 'sans-serif'],
     },
   },
   plugins: [],
