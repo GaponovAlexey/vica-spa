@@ -1,26 +1,17 @@
 import { Switch } from '@headlessui/react'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { isLanguage } from '../../redux/mainReducer'
+import React from 'react'
 
-export default function Toggle() {
-  const [enabled, setEnabled] = useState(false)
+export const Toggle = () => {
+  const [enabled, setEnabled] = React.useState(false)
+
   const router = useRouter()
-
+  
   const toggle = () => {
     setEnabled(!enabled)
     router.locale === 'ru' ? router.back() : router.push('/ru')
-    // {
-    //   locales?.map((locale: any) => (
-    //     <li key={locale}>
-    //       <Link href={router.asPath} locale={locale}>
-    //         <a>{locale}</a>
-    //       </Link>
-    //     </li>
-    //   ))
-    // }
   }
+
 
   return (
     <div>

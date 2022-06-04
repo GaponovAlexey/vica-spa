@@ -1,7 +1,4 @@
 {
-  "home": {
-    "welcome": "Welcome"
-  },
   "header": {
     "home": "Home",
     "about": "About",
@@ -9,5 +6,10 @@
     "comments": "Comments",
     "certificates": "Certificates",
     "contact": "Contact"
+  },
+  "logo": {
+    "title": "Podolog Viktorias Olegovna",
+    "subtitle": "Pedicure Professional in the profession since 2014 Komendantsky Prospekt (Saint Petersburg)",
+    "price": "Price or Order"
   }
 }

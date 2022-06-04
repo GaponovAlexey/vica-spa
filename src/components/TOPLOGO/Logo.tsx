@@ -1,51 +1,19 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl'
 import s from '../../../styles/css/Home.module.css'
-import { useAppSelector } from '../../redux'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
-import Toggle from '../utils/Toggle'
 
 export const Logo = () => {
-  const lang = useAppSelector((state) => state.lang.language)
+  const t = useTranslations('logo')
   return (
     <div className={s.logoText}>
+      <h1>{t('title')}</h1>
       <div>
-        {lang ? (
-          <h1>Podolog Viktorias Olegovna</h1>
-        ) : (
-          <h1>
-            Подолог <br /> Виктория Ясная
-          </h1>
-        )}
-        {lang ? (
-          <p>
-            Pedicure Professional <br /> in the profession since 2014,
-            <br /> Komendantsky Prospekt (Saint Petersburg)
-          </p>
-        ) : (
-          <p>
-            Со мной не страшно <br /> В профессии с 2014 года
-            <br /> Комендантский проспект (Санкт Петербург)
-          </p>
-        )}
-        <a href='https://dikidi.net/141929?p=0.pi'>
-          {lang ? (
-            <div className='bg-red-200'>Price or Order</div>
-          ) : (
-            <div className='bg-red-200'>Записаться</div>
-          )}
-          {lang ? (
-            <div className='bg-red-200'>Price or Order</div>
-          ) : (
-            <div className='bg-red-200'>Узнать цену</div>
-          )}
-        </a>
-      </div>
-
-      <div className={s.lang}>
         <div>
-          <Toggle />
+          <p>{t('subtitle')}</p>
+          <a href='https://dikidi.net/141929?p=0.pi'>{t('price')}</a>
+          
         </div>
+
         <CustomIMAGE
           style={'object-cover object-[0_45%]'}
           height={600}

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import s from '../../../styles/css/Home.module.css'
-import { useAppSelector } from '../../redux'
+import { Toggle } from '../utils/Toggle'
 import { Burger } from './Burger'
 
 export const Header = () => {
@@ -10,6 +10,7 @@ export const Header = () => {
   if (click) {
     return <Burger click={click} setClick={setClick} />
   }
+
   return (
     <header id='home' className={s.header}>
       <div>
@@ -30,6 +31,9 @@ export const Header = () => {
         </li>
         <li>
           <a href='#contacts'>{t('contact')}</a>
+          <p className='fixed top-20 -right-20 '>
+            <Toggle />
+          </p>
         </li>
       </div>
 
@@ -48,3 +52,4 @@ export const Header = () => {
     </header>
   )
 }
+

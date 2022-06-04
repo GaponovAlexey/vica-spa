@@ -7,11 +7,11 @@ import { NextIntlProvider } from 'next-intl'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <NextIntlProvider messages={pageProps.messages}>
+    <NextIntlProvider messages={pageProps.messages}>
+      <Provider store={store}>
         <Component {...pageProps} />
-      </NextIntlProvider>
-    </Provider>
+      </Provider>
+    </NextIntlProvider>
   )
 }
 
