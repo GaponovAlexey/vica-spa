@@ -1,10 +1,7 @@
-import { Switch } from '@headlessui/react'
 import { useTranslations } from 'next-intl'
-import { useRouter } from 'next/router'
 import React from 'react'
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
-import { Tog } from '../utils/Tog'
 
 export const Logo = () => {
   const t = useTranslations('logo')
