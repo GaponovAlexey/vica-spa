@@ -28,23 +28,27 @@
 }
 
 .logoText > h1 {
-  @apply text-right  pt-40 font-bold text-[42px] mb-10 text-sky-800;
+  @apply text-left  pt-40 font-bold text-[42px] mb-10 text-sky-800;
 }
 
 .logoText > div {
-  @apply flex bg-sky-200 items-center;
+  @apply flex justify-between;
 }
 
 .logoText > div > div {
-  @apply w-1/2 px-4  text-left text-sky-800;
+  @apply max-w-[420px]  px-4  text-left text-sky-800;
 }
 
 .logoText > div > div > p {
   @apply font-light text-2xl mb-10;
 }
 
-.logoText > div > p {
-  @apply bg-red-200;
+.logoText > div > div > a {
+  @apply bg-sky-100 text-green-700  font-bold py-2 px-4;
+}
+
+.logoText > div > span {
+  /* @apply ; */
 }
 
 .reaperAbout {

@@ -9,12 +9,11 @@ import { Tog } from '../components/utils/Tog'
 const Home: NextPage = () => {
   return (
     <>
-    <Head>
-      
-      <title>Home</title>
-    </Head>
+      <Head>
+        <title>Home</title>
+      </Head>
       <div className='fixed top-20 right-0 '>
-        <Tog  />
+        <Tog />
       </div>
       <Layout>
         <div className={s.container}>
