@@ -1,14 +1,16 @@
 import type { GetStaticPropsContext, NextPage } from 'next'
-import { useTranslations } from 'next-intl'
-import { useRouter } from 'next/router'
 import s from '../../styles/css/Home.module.css'
 import { About } from '../components/ABOUT'
 import { Layout } from '../components/layout'
 import { Logo } from '../components/TOPLOGO'
+import { Tog } from '../components/utils/Tog'
 
 const Home: NextPage = () => {
   return (
     <>
+      <div className='fixed top-20 right-0 '>
+        <Tog  />
+      </div>
       <Layout>
         <div className={s.container}>
           <div className={s.main}>

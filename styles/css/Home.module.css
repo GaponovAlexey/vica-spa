@@ -28,7 +28,7 @@
 }
 
 .logoText > h1 {
-  @apply text-center  pt-40 font-bold text-[42px] mb-10 text-sky-800;
+  @apply text-right  pt-40 font-bold text-[42px] mb-10 text-sky-800;
 }
 
 .logoText > div {
@@ -36,7 +36,7 @@
 }
 
 .logoText > div > div {
-  @apply w-1/2 px-4 py-2 text-center text-sky-800;
+  @apply w-1/2 px-4  text-left text-sky-800;
 }
 
 .logoText > div > div > p {
