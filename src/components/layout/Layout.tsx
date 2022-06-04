@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { FC } from 'react'
 import s from '../../../styles/css/Home.module.css'
+import { Tog } from '../utils/Tog'
 import { Header } from './Header'
 
 interface LayoutProps {

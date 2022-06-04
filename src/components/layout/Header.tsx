@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import s from '../../../styles/css/Home.module.css'
-import { Toggle } from '../utils/Toggle'
 import { Burger } from './Burger'
 
 export const Header = () => {
@@ -13,6 +12,7 @@ export const Header = () => {
 
   return (
     <header id='home' className={s.header}>
+      
       <div>
         <li>
           <a href='#home'>{t('home')}</a>
@@ -31,9 +31,6 @@ export const Header = () => {
         </li>
         <li>
           <a href='#contacts'>{t('contact')}</a>
-          <p className='fixed top-20 -right-20 '>
-            <Toggle />
-          </p>
         </li>
       </div>
 
@@ -49,7 +46,7 @@ export const Header = () => {
           <rect y='60' width='100' height='20' rx='8' />
         </svg>
       </p>
+      
     </header>
   )
 }
-
