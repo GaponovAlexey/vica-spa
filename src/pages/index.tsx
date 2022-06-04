@@ -1,4 +1,5 @@
 import type { GetStaticPropsContext, NextPage } from 'next'
+import Head from 'next/head'
 import s from '../../styles/css/Home.module.css'
 import { About } from '../components/ABOUT'
 import { Layout } from '../components/layout'
@@ -8,6 +9,9 @@ import { Tog } from '../components/utils/Tog'
 const Home: NextPage = () => {
   return (
     <>
+    <Head>
+      <title>Home</title>
+    </Head>
       <div className='fixed top-20 right-0 '>
         <Tog  />
       </div>
