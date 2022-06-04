@@ -17,14 +17,12 @@ export const Logo = () => {
           <p>{t('subtitle')}</p>
           <a href='https://dikidi.net/141929?p=0.pi'>{t('price')}</a>
         </div>
-        <span>
-          <CustomIMAGE
-            style={'object-cover object-[0_45%]'}
-            height={600}
-            width={600}
-            src={`/img/2.jpg`}
-          />
-        </span>
+        <CustomIMAGE
+          style={'object-cover object-[0_55%]'}
+          height={400}
+          width={600}
+          src={`/img/2.jpg`}
+        />
       </div>
     </div>
   )

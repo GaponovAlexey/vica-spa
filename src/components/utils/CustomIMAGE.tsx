@@ -11,8 +11,8 @@ interface img {
 export const CustomIMAGE = ({style, width, height, src }: img) => {
   return (
     <Image
-      width={600}
-      height={300}
+      width={width}
+      height={height}
       src={src}
       alt='logo'
       quality={100}
