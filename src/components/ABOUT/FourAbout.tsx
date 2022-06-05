@@ -5,8 +5,8 @@ export const FourAbout = ({ t }: any) => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
     <div className={s.about}>
-      <div className={s.text}>
-        <div>{t('fourTitle')}</div>
+      <div className={s.wrapperText}>
+        <div className={s.textLeft}>{t('fourTitle')}</div>
         <CustomIMAGE
           style={'object-cover object-[0%_37%] '}
           height={600}

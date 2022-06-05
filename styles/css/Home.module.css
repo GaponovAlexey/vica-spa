@@ -48,27 +48,27 @@
 }
 
 .logoText > div > div > a {
-  @apply absolute right-0 bottom-2 bg-sky-100 text-green-700  font-bold py-2 px-4;
+  @apply absolute right-0 bottom-2 font-sans bg-sky-200 text-sky-800  font-bold py-1 px-4;
 }
 
 .reaperAbout {
   @apply bg-gray-50;
 }
 
-.about .texts {
-  @apply ml-10;
-}
-
 .about > h1 {
   @apply text-center font-bold pt-10 text-[42px] mb-10 text-blue-700;
 }
 
-.about .text {
+.about .wrapperText {
   @apply grid grid-cols-2 h-[350px];
 }
 
-.about .text > div > p {
-  @apply whitespace-pre-line text-2xl leading-9;
+.about .textRight {
+  @apply font-sans text-center ml-10 leading-loose;
+}
+
+.about .textLeft {
+  @apply text-center font-sans leading-loose;
 }
 
 .burger {

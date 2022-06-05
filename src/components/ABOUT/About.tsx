@@ -12,14 +12,14 @@ export const About = () => {
     <div className={s.reaperAbout} >
       <div className={`${s.about} ${s.layout}`}>
         <h1>{t('title')}</h1>
-        <div className={s.text}>
+        <div className={s.wrapperText}>
           <CustomIMAGE
             style={'object-cover object-[0_30%] '}
             height={600}
             width={600}
             src={`/img/6.jpg`}
           />
-          <div className={s.texts}>
+          <div className={s.textRight}>
             {t('topTitle')}
           </div>
         </div>
