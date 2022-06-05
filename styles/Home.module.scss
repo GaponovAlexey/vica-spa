@@ -55,10 +55,10 @@
     @apply md:grid md:grid-cols-2 md:h-[350px];
   }
   .textRight {
-    @apply font-sans text-center ml-10 leading-loose;
+    @apply font-sans text-left ml-5 md:text-center text-xl md:self-center leading-loose;
   }
   .textLeft {
-    @apply  text-center font-sans leading-loose;
+    @apply  text-left m-5 md:text-center md:self-center text-xl font-sans leading-loose;
   }
 }
 
