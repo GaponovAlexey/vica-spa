@@ -15,8 +15,12 @@
 }
 
 .header > div {
-  @apply sm:hidden md:hidden lg:flex
+  @apply sm:hidden  md:flex
     flex flex-wrap justify-between px-4 py-4 cursor-pointer border-b-2 border-sky-300;
+}
+
+.header > p {
+  @apply xl:hidden lg:hidden md:hidden;
 }
 
 .footer {

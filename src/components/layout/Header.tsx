@@ -12,7 +12,6 @@ export const Header = () => {
 
   return (
     <header id='home' className={s.header}>
-      
       <div>
         <li>
           <a href='#home'>{t('home')}</a>
@@ -34,7 +33,7 @@ export const Header = () => {
         </li>
       </div>
 
-      <p className='xl:hidden  lg:hidden '>
+      <p >
         <svg
           onClick={() => setClick(!click)}
           viewBox='0 0 100 80'
@@ -46,7 +45,6 @@ export const Header = () => {
           <rect y='60' width='100' height='20' rx='8' />
         </svg>
       </p>
-      
     </header>
   )
 }

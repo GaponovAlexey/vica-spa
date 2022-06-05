@@ -2,6 +2,7 @@ import { FC, useState } from 'react'
 import { useAppSelector } from '../../redux'
 import { cl } from '../utils/cl'
 import s from '../../../styles/css/Home.module.css'
+import { useTranslations } from 'next-intl'
 
 interface IBurger {
   click: boolean
@@ -9,7 +10,7 @@ interface IBurger {
 }
 
 export const Burger: FC<IBurger> = ({ click, setClick }) => {
-  const lang = useAppSelector((state) => state.lang.language)
+  const t = useTranslations('header')
 
   return (
     <div className={s.burger}>
@@ -20,23 +21,24 @@ export const Burger: FC<IBurger> = ({ click, setClick }) => {
           }}
           href='#home'
         >
-          {lang ? 'Home' : 'Главная'}
+          {t('home')}
         </a>
       </li>
+
       <li>
-        <a href='#about'>{lang ? 'About' : 'Обо мне'}</a>
+        <a href='#about'>{t('about')}</a>
       </li>
       <li>
-        <a href='#skills'>{lang ? 'Skills' : 'Услуги'}</a>
+        <a href='#skills'>{t('skills')}</a>
       </li>
       <li>
-        <a href='#comments'>{lang ? 'Comments' : 'Отзывы'}</a>
+        <a href='#comments'>{t('comments')}</a>
       </li>
       <li>
-        <a href='#certificates'>{lang ? 'Certificates' : 'Сертификаты'}</a>
+        <a href='#certificates'>{t('certificates')}</a>
       </li>
       <li>
-        <a href='#contacts'>{lang ? 'Contacts' : 'Контакты'}</a>
+        <a href='#contacts'>{t('contact')}</a>
       </li>
     </div>
   )
