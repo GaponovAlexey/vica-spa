@@ -1,7 +1,7 @@
 import { useAppSelector } from '../../redux'
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
-export const ThreeAbout = () => {
+export const ThreeAbout = ({t}: any) => {
   const lang = useAppSelector((state) => state.lang.language)
   return (
     <div className={s.about}>
@@ -13,20 +13,7 @@ export const ThreeAbout = () => {
           src={`/img/1.jpg`}
         />
         <div className={s.texts}>
-          {lang ? (
-            <p>
-              <br />
-              On this site you can find some information about my services and
-              answers to your questions about particular problems.
-            </p>
-          ) : (
-            <p>
-              <br />
-              На этом сайте вы сможете увидеть то, чем я могу быть вам полезна и
-              возможно, найти некоторые ответы на свои вопросы по конкретным
-              проблемам.
-            </p>
-          )}
+          {t('threeTitle')}
         </div>
       </div>
     </div>
