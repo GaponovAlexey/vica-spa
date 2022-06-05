@@ -2,8 +2,8 @@ import type { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
 import s from '../../styles/css/Home.module.css'
 import { About } from '../components/ABOUT'
-import { Comments } from '../components/COMMENTS/Comments'
 import { Layout } from '../components/layout'
+import { Skills } from '../components/SKILLS'
 import { Logo } from '../components/TOPLOGO'
 import { Tog } from '../components/utils/Tog'
 
@@ -20,8 +20,8 @@ const Home: NextPage = () => {
             <Logo />
           </div>
           <About />
+          <Skills />
         </div>
-        <Comments />
       </Layout>
     </>
   )
