@@ -1,13 +1,9 @@
 .container {
-  @apply p-1;
+  @apply p-1 min-h-screen;
 }
 
 .layout {
   @apply max-w-[1080px] m-auto;
-}
-
-.main {
-  @apply min-h-screen;
 }
 
 .header {
@@ -36,7 +32,7 @@
 }
 
 .logoText > div {
-  @apply md:flex flex-wrap  justify-between;
+  @apply md:flex flex-wrap   justify-between;
 }
 
 .logoText > div > div {
@@ -48,7 +44,7 @@
 }
 
 .logoText > div > div > a {
-  @apply absolute right-0 bottom-2 font-sans bg-sky-200 text-sky-800  font-bold py-1 px-4;
+  @apply shadow-md absolute right-0 bottom-2 font-sans bg-sky-200 text-sky-800  font-bold py-1 px-4;
 }
 
 .reaperAbout {
@@ -60,7 +56,7 @@
 }
 
 .about .wrapperText {
-  @apply md:grid md:grid-cols-2 md:h-[350px];
+  @apply shadow-2xl md:grid md:grid-cols-2 md:h-[350px];
 }
 
 .about .textRight {

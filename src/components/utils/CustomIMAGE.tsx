@@ -8,7 +8,7 @@ interface img {
   style: string
 }
 
-export const CustomIMAGE = ({style, width, height, src }: img) => {
+export const CustomIMAGE = ({ style, width, height, src }: img) => {
   return (
     <Image
       width={width}

@@ -1,7 +1,7 @@
 import { Switch } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-
+import s from '../../../styles/css/Home.module.css'
 export const Tog = () => {
   const [enabled, setEnabled] = useState(false)
   const router = useRouter()
@@ -12,7 +12,7 @@ export const Tog = () => {
   }
 
   return (
-    <div>
+    <div className={s.toggle}>
       {enabled ? <div>rus</div> : <div>eng</div>}
       <Switch
         checked={enabled}
