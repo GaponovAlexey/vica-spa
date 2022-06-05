@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <div className='fixed top-20 right-0 '>
+      <div className={s.toggle}>
         <Tog />
       </div>
       <Layout>
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <div className={s.layout}>
               <Logo />
             </div>
-            <About />
+            {/* <About /> */}
           </div>
         </div>
       </Layout>
