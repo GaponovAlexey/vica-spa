@@ -1,6 +1,5 @@
 import { FC, useState } from 'react'
 import { useAppSelector } from '../../redux'
-import { cl } from '../utils/cl'
 import s from '../../../styles/css/Home.module.css'
 import { useTranslations } from 'next-intl'
 
