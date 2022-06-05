@@ -1,10 +1,9 @@
 import { Switch } from '@headlessui/react'
 import { useRouter } from 'next/router'
-import React, { useCallback, useEffect } from 'react'
+import { useState } from 'react'
 
 export const Tog = () => {
-  // if(typeof window === 'undefined') return {}
-  const [enabled, setEnabled] = React.useState(false)
+  const [enabled, setEnabled] = useState(false)
   const router = useRouter()
 
   const toggle = () => {

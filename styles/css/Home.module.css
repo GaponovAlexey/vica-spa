@@ -60,7 +60,7 @@
 }
 
 .about .wrapperText {
-  @apply grid grid-cols-2 h-[350px];
+  @apply md:grid md:grid-cols-2 md:h-[350px];
 }
 
 .about .textRight {
@@ -77,6 +77,6 @@
 }
 
 .toggle {
-  @apply fixed top-28 right-0;
+  @apply fixed top-28 right-0 z-20;
 }
 /*# sourceMappingURL=Home.module.css.map */

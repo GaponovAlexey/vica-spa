@@ -6,7 +6,6 @@ import { ThreeAbout } from './ThreeAbout'
 import { FourAbout } from './FourAbout'
 import { useTranslations } from 'next-intl'
 export const About = () => {
-  const lang = useAppSelector((state) => state.lang.language)
   const t = useTranslations('about')
   return (
     <div className={s.reaperAbout} >
