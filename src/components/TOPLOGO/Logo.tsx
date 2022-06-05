@@ -7,7 +7,7 @@ export const Logo = () => {
   const t = useTranslations('logo')
 
   return (
-    <div className={s.logoText}>
+    <div className={`${s.logoText} ${s.layout}`}>
       <h1>{t('title')}</h1>
       <div>
         <div>

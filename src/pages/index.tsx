@@ -16,9 +16,7 @@ const Home: NextPage = () => {
       <Layout>
         <Tog />
         <div className={s.container}>
-          <div className={s.layout}>
-            <Logo />
-          </div>
+          <Logo />
           <About />
           <Skills />
         </div>
