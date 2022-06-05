@@ -44,7 +44,7 @@
 }
 
 .logoText > div > div > p {
-  @apply text-right text-2xl mb-10;
+  @apply sm:text-left md:text-right text-2xl mb-10;
 }
 
 .logoText > div > div > a {

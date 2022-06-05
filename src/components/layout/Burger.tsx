@@ -1,7 +1,6 @@
-import { FC, useState } from 'react'
-import { useAppSelector } from '../../redux'
-import s from '../../../styles/css/Home.module.css'
 import { useTranslations } from 'next-intl'
+import { FC } from 'react'
+import s from '../../../styles/css/Home.module.css'
 
 interface IBurger {
   click: boolean

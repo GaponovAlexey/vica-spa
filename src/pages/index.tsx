@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <div className={s.layout}>
               <Logo />
             </div>
-            {/* <About /> */}
+            <About />
           </div>
         </div>
       </Layout>
