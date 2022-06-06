@@ -5,7 +5,7 @@ interface img {
   height: number
   width: number
   src: string
-  style: string
+  style?: string
 }
 
 export const CustomIMAGE = ({ style, width, height, src }: img) => {

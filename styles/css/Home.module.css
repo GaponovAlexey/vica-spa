@@ -3,7 +3,7 @@
 }
 
 .layout {
-  @apply max-w-[1080px] m-auto;
+  @apply max-w-[1080px] m-auto min-h-screen;
 }
 
 .header {
@@ -52,11 +52,11 @@
 }
 
 .about > h1 {
-  @apply text-center font-bold mt-5 md:pt-20  text-[42px] mb-5 md:mb-20 text-sky-800;
+  @apply text-center font-bold mt-5 md:pt-20 mb-5 md:mb-20  text-[42px] text-sky-800;
 }
 
 .about .wrapperText {
-  @apply shadow-2xl md:grid md:grid-cols-2 md:h-[350px];
+  @apply md:grid md:grid-cols-2 md:h-[350px];
 }
 
 .about .textRight {
@@ -74,5 +74,18 @@
 
 .toggle {
   @apply fixed top-28 right-0 z-20;
+}
+
+.skills > h1 {
+  @apply mt-5 md:pt-20 mb-5 md:mb-20  text-3xl text-center;
+}
+
+.skills > div {
+  @apply md:flex md:justify-between;
+}
+
+.skills > div > div {
+  @apply mt-10 md:mt-2 bg-red-200 flex flex-wrap justify-center
+      md:w-1/4 h-[400px] m-auto;
 }
 /*# sourceMappingURL=Home.module.css.map */
