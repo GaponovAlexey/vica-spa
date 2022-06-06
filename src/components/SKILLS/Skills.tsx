@@ -1,9 +1,7 @@
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
-export const Skills = (size = 'md') => {
-  let scale = 350
-  if (size === 'sm') scale = 200
-  if (size === 'md') scale = 500
+export const Skills = () => {
+  
   return (
     <div className={`${s.layout} ${s.skills}`}>
       <h1>Что можно сделать</h1>
