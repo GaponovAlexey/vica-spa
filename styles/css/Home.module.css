@@ -77,7 +77,7 @@
 }
 
 .skills > h1 {
-  @apply mt-5 md:pt-20 mb-5 md:mb-20  text-3xl text-center;
+  @apply mt-5 md:pt-20 mb-5 md:mb-20  text-3xl;
 }
 
 .skills > div {
@@ -85,8 +85,8 @@
 }
 
 .skills > div > div {
-  @apply mt-10 md:mt-2 bg-gray-100 flex flex-wrap justify-center
-      md:w-[60vh]  h-auto flex-grow;
+  @apply mt-10 md:mt-2 bg-gray-100  
+      md:max-w-[60vh]  h-auto;
 }
 
 .skills > div > div > div {
