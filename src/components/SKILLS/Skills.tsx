@@ -1,43 +1,71 @@
+import Link from 'next/link'
 import s from '../../../styles/css/Home.module.css'
 import { CustomIMAGE } from '../utils/CustomIMAGE'
 export const Skills = () => {
-  
   return (
     <div className={`${s.layout} ${s.skills}`}>
       <h1>Что можно сделать</h1>
       <div>
-        <div className=' '>
-          <div className='p-4'>
+        <div>
+          <div>
             <CustomIMAGE
-              src='/img/2.jpg'
-              style={'object-cover object-[0_45%] '}
+              src='/img/skills/2.jpg'
+              style={'object-cover flex-wrap object-[0_45%] '}
               width={500}
               height={350}
             />
           </div>
-          <h2>Масаж</h2>
+          <div>
+            <h2>Масаж</h2>
+            <p>
+              Масаж поможет вам поддержать и подготовить ваше тело к процедурам
+            </p>
+          </div>
+          <div>
+            <Link href={'https://dikidi.net/141929?p=2.pi-po-ss&o=2'}>
+              Записаться
+            </Link>
+          </div>
         </div>
         <div>
-          <div className='p-4'>
+          <div>
             <CustomIMAGE
-              src='/img/2.jpg'
+              src='/img/skills/4.jpg'
               style={'object-cover object-[0_45%] '}
               width={500}
               height={350}
             />
           </div>
-          Педикюр
+          <div>
+            <h2>Педикюр</h2>
+            <p>Педикюр, косметический,херургический</p>
+            <p>Установка титановой нити</p>
+          </div>
+          <div>
+            <Link href={'https://dikidi.net/141929?p=2.pi-po-ss&o=2'}>
+              Записаться
+            </Link>
+          </div>
         </div>
         <div>
-          <div className='p-4'>
+          <div>
             <CustomIMAGE
-              src='/img/2.jpg'
-              style={'object-cover object-[0_45%] '}
+              src='/img/skills/3.jpg'
+              style={'object-cover object-center '}
               width={500}
               height={350}
             />
           </div>
-          Косметология
+          <div>
+            <h2>Косметология</h2>
+            <p>Отбеливание зубов</p>
+            <p>Cкульптурно буккальный массаж лица</p>
+          </div>
+          <div>
+            <Link href={'https://dikidi.net/141929?p=2.pi-po-ss&o=2'}>
+              Записаться
+            </Link>
+          </div>
         </div>
       </div>
     </div>
