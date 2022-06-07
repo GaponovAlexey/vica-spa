@@ -85,7 +85,7 @@
 }
 
 .skills .wrapperSkills .elementSkills {
-  @apply p-4 relative pb-7 mt-10 md:mt-2 bg-gray-100  
+  @apply p-4 relative pb-9 mt-10 md:mt-2 bg-gray-100  
       md:max-w-[60vh];
 }
 
@@ -94,13 +94,13 @@
 }
 
 .skills .wrapperSkills .elementSkills .about > h2 {
-  @apply text-left text-sky-800 font-bold mb-2;
+  @apply text-left text-sky-800 font-bold mb-4;
 }
 
 .skills .wrapperSkills .elementSkills .link {
   background: url("/img/svg/arow.svg") no-repeat right;
-  @apply absolute 
-        hover:translate-x-2 
-        pr-10 bottom-2 right-4 text-sky-800;
+  @apply absolute
+        hover:translate-x-1
+        pr-10  bottom-2 right-4 text-sky-800;
 }
 /*# sourceMappingURL=Home.module.css.map */
