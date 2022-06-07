@@ -77,27 +77,30 @@
 }
 
 .skills > h1 {
-  @apply mt-5 md:pt-20 mb-5 md:mb-20  text-3xl;
+  @apply mt-5 md:pt-20 mb-5 md:mb-20  text-3xl text-center;
 }
 
 .skills .wrapperSkills {
-  @apply md:flex md:justify-between;
+  @apply md:grid md:grid-cols-3 gap-x-10 md:justify-between;
 }
 
 .skills .wrapperSkills .elementSkills {
-  @apply relative pb-7 mt-10 md:mt-2 bg-gray-100  
+  @apply p-4 relative pb-7 mt-10 md:mt-2 bg-gray-100  
       md:max-w-[60vh];
 }
 
 .skills .wrapperSkills .elementSkills .img {
-  @apply p-4;
+  @apply hover:animate-pulse;
 }
 
-.skills .wrapperSkills .elementSkills > h2 {
-  @apply text-left font-bold text-2xl;
+.skills .wrapperSkills .elementSkills .about > h2 {
+  @apply text-left text-sky-800 font-bold mb-2;
 }
 
 .skills .wrapperSkills .elementSkills .link {
-  @apply absolute bottom-0 right-0  text-sky-800;
+  background: url("/img/svg/arow.svg") no-repeat right;
+  @apply absolute 
+        hover:translate-x-2 
+        pr-10 bottom-2 right-4 text-sky-800;
 }
 /*# sourceMappingURL=Home.module.css.map */
