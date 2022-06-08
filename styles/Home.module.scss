@@ -2,7 +2,7 @@
   @apply p-1 min-h-screen;
 }
 .layout {
-  @apply max-w-[1080px] m-auto min-h-screen;
+  @apply max-w-[1080px] m-auto;
 }
 
 .header {
@@ -21,7 +21,7 @@
 }
 
 .logoText {
-  @apply min-h-screen;
+  @apply pb-20 ;
   > h1 {
     @apply text-left sm:pt-16 md:pt-44 font-bold sm:text-[34px] md:text-[62px] mb-12 text-sky-800;
   }

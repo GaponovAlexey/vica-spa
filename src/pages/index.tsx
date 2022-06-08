@@ -3,6 +3,7 @@ import Head from 'next/head'
 import s from '../../styles/css/Home.module.css'
 import { About } from '../components/ABOUT'
 import { Layout } from '../components/layout'
+import { Sertik } from '../components/SERTIFICATES'
 import { Skills } from '../components/SKILLS'
 import { Logo } from '../components/TOPLOGO'
 import { Tog } from '../components/utils/Tog'
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
           <Logo />
           <About />
           <Skills />
+          <Sertik />
         </div>
       </Layout>
     </>
