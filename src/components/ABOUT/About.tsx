@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div className={s.reaperAbout} >
       <div className={`${s.about} ${s.layout}`}>
-        <h1>{t('title')}</h1>
+        <h1  >{t('title')}</h1>
         <div className={s.wrapperText}>
           <CustomIMAGE
             style={'object-cover object-[0_30%] '}
