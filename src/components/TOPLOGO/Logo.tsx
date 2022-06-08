@@ -8,11 +8,11 @@ export const Logo = () => {
 
   return (
     <div className={`${s.logoText} ${s.layout}`}>
-      <h1>{t('title')}</h1>
+      <h1 >{t('title')}</h1>
       <div>
         <div>
-          <p>{t('subtitle')}</p>
-          <a href='https://dikidi.net/141929?p=0.pi'>{t('price')}</a>
+          <p >{t('subtitle')}</p>
+          <a  href='https://dikidi.net/141929?p=0.pi'>{t('price')}</a>
         </div>
         <CustomIMAGE
           style={'object-cover object-[0_55%]'}
